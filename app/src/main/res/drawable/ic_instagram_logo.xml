@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="26dp"
+    android:height="26dp"
+    android:viewportWidth="256"
+    android:viewportHeight="256">
+
+    <!-- Outer glow ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF3B30"
+        android:strokeWidth="10"
+        android:pathData="M128,26
+            A102,102 0 1,1 127.9,26 Z"/>
+
+    <!-- Inner ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF6A60"
+        android:strokeWidth="6"
+        android:pathData="M128,52
+            A76,76 0 1,1 127.9,52 Z"/>
+
+    <!-- Iris (dark) -->
+    <path
+        android:fillColor="#1A0B0B"
+        android:pathData="M128,70
+            A58,58 0 1,1 127.9,70 Z"/>
+
+    <!-- Three-blade swirl (original design) -->
+    <path
+        android:fillColor="#FF3B30"
+        android:pathData="M128,78
+            C152,78 170,98 168,120
+            C166,142 146,154 132,150
+            C150,142 154,120 142,106
+            C134,96 120,90 106,94
+            C112,84 120,78 128,78 Z"/>
+
+    <path
+        android:fillColor="#FF3B30"
+        android:pathData="M78,128
+            C78,152 98,170 120,168
+            C142,166 154,146 150,132
+            C142,150 120,154 106,142
+            C96,134 90,120 94,106
+            C84,112 78,120 78,128 Z"/>
+
+    <path
+        android:fillColor="#FF3B30"
+        android:pathData="M128,178
+            C104,178 86,158 88,136
+            C90,114 110,102 124,106
+            C106,114 102,136 114,150
+            C122,160 136,166 150,162
+            C144,172 136,178 128,178 Z"/>
+
+    <!-- Pupil -->
+    <path
+        android:fillColor="#0B0B0F"
+        android:pathData="M128,110
+            A18,18 0 1,1 127.9,110 Z"/>
+
+    <!-- Small highlight -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.20"
+        android:pathData="M145,104
+            A6,6 0 1,1 144.9,104 Z"/>
+</vector>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Video Player -->
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:resize_mode="fit"
+        app:use_controller="false">
+
+        <!-- Top username bar — subtle gradient for legibility -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="top"
+            android:background="@drawable/gradient_scrim_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/usernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_username"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="· Follow"
+                android:textColor="#4A9EFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </com.google.android.exoplayer2.ui.StyledPlayerView>
+
+    <!-- Bottom gradient scrim for content legibility -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient_scrim_bottom"
+        android:importantForAccessibility="no" />
+
+    <!-- Progress Bar (buffering) -->
+    <ProgressBar
+        android:id="@+id/videoProgressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/white"
+        android:visibility="gone" />
+
+    <!-- Violence Block Icon -->
+    <ImageView
+        android:id="@+id/violenceBlockImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_block"
+        android:visibility="gone"
+        app:tint="#FF3B30" />
+
+    <!-- Bottom Content — Left Side -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="76dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bottomUsernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_username"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.01"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/videoTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="'Morning ... オハイオ"
+            android:textColor="#F0F0F0"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/captionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_caption"
+            android:textColor="#CCFFFFFF"
+            android:textSize="13sp"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+        <!-- Music row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/music_pill_bg"
+            android:paddingStart="10dp"
+            android:paddingEnd="14dp">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_music"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Original Audio"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginStart="6dp"
+                android:letterSpacing="0.01" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Right Side Action Buttons -->
+    <LinearLayout
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp">
+
+        <!-- Profile Image -->
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="18dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@drawable/profile_border"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_placeholder" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:src="@drawable/ic_add_circle"
+                app:tint="#4A9EFF" />
+
+        </FrameLayout>
+
+        <!-- Like -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/likeButton"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/ic_like_outline"
+                android:padding="5dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/likesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.2M"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Comment -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/commentButton"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/ic_comment"
+                android:padding="5dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/commentsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45.2K"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Share -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/shareButton"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/ic_share"
+                android:padding="5dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/sharesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.1K"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Reshare -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/reshareButton"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/ic_reshare"
+                android:padding="5dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/reshareCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="895"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- More -->
+        <ImageView
+            android:id="@+id/moreButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_more"
+            android:padding="5dp"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Like Animation -->
+    <ImageView
+        android:id="@+id/likeIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_heart"
+        android:visibility="gone"
+        app:tint="#FF3B30" />
+
+</FrameLayout>

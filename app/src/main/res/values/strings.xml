@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Instagram Reels</string>
+
+    <!-- Default Text Values -->
+    <string name="default_username">@username</string>
+    <string name="default_caption">Video caption</string>
+    <string name="default_count">0</string>
+
+    <!-- Content Descriptions for Accessibility -->
+    <string name="profile_picture">Profile picture</string>
+    <string name="like_button">Like this video</string>
+    <string name="comment_button">Comment on this video</string>
+    <string name="share_button">Share this video</string>
+    <string name="more_button">More options</string>
+    <string name="like_animation">Like animation</string>
+    <string name="violence_warning">Violent content blocked</string>
+    <string name="video_player">Video player</string>
+    <string name="loading_indicator">Loading video</string>
+    <string name="username_label">Username</string>
+    <string name="caption_label">Video caption</string>
+    <string name="likes_count_label">Number of likes</string>
+    <string name="comments_count_label">Number of comments</string>
+    <string name="shares_count_label">Number of shares</string>
+
+    <!-- UI Text -->
+    <string name="loading_reels">Loading reels from GitHub...</string>
+    <string name="loaded_reels">Loaded %d reels</string>
+    <string name="fallback_videos">Using fallback videos. GitHub videos unavailable.</string>
+    <string name="no_videos">No videos available.\nPlease check your connection and try again.</string>
+    <string name="no_videos_github">No videos found in GitHub repository</string>
+    <string name="github_load_error">Failed to load from GitHub: %s</string>
+    <string name="trying_fallback">\n\nTrying fallback videos...</string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">Settings</string>
+    <string name="violence_block_title">Violence Block</string>
+    <string name="violence_block_description">When enabled, the app will automatically detect and block violent content in real-time.</string>
+    <string name="status_ready">Status: Ready</string>
+    <string name="status_active">Status: Active - Detecting violent content</string>
+    <string name="status_disabled">Status: Ready (Disabled)</string>
+    <string name="status_model_not_loaded">Status: Model not loaded - Check TFLite file in assets</string>
+    <string name="violence_block_enabled">Violence blocking enabled</string>
+    <string name="violence_block_disabled">Violence blocking disabled</string>
+
+    <!-- Violence Detection Messages -->
+    <string name="analyzing_content">Analyzing content...</string>
+    <string name="content_blocked">Content Blocked</string>
+    <string name="violent_content_detected">Violent content detected</string>
+    <string name="scroll_for_more">Scroll for more videos</string>
+    <string name="confidence_format">Confidence: %.1f%%</string>
+
+    <!-- Error Messages -->
+    <string name="error_video_player">Failed to setup video player</string>
+    <string name="error_loading_videos">Error loading videos</string>
+    <string name="error_network">Network error: %s</string>
+    <string name="error_empty_response">Empty response from server</string>
+    <string name="error_no_videos">No videos available. Please try again later.</string>
+
+    <!-- Video Player Controls -->
+    <string name="play_video">Play video</string>
+    <string name="pause_video">Pause video</string>
+    <string name="replay_video">Replay video</string>
+    <string name="mute_video">Mute video</string>
+    <string name="unmute_video">Unmute video</string>
+    <string name="fullscreen">Fullscreen</string>
+    <string name="exit_fullscreen">Exit fullscreen</string>
+
+    <!-- Comments Section (Future Use) -->
+    <string name="comments_title">Comments</string>
+    <string name="comments_coming_soon">Comments coming soon!</string>
+    <string name="add_comment">Add a comment...</string>
+    <string name="post_comment">Post</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Share Dialog -->
+    <string name="share_title">Share video</string>
+    <string name="share_text">Check out this video: %s</string>
+    <string name="share_via">Share via</string>
+
+    <!-- Menu Items -->
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_about">About</string>
+
+    <!-- About Dialog -->
+    <string name="about_title">About</string>
+    <string name="about_version">Version 1.0</string>
+    <string name="about_description">Instagram Reels Clone with Violence Detection</string>
+    <string name="about_developed_by">Developed by</string>
+
+    <!-- Permission Requests -->
+    <string name="permission_internet">Internet permission is required to load videos</string>
+    <string name="permission_storage">Storage permission is required to cache videos</string>
+
+    <!-- Network Status -->
+    <string name="network_connected">Connected</string>
+    <string name="network_disconnected">No internet connection</string>
+    <string name="network_checking">Checking connection...</string>
+
+    <!-- Loading States -->
+    <string name="loading">Loading...</string>
+    <string name="loading_videos">Loading videos...</string>
+    <string name="loading_analyzing">Analyzing video content...</string>
+    <string name="loading_preparing">Preparing player...</string>
+
+    <!-- Success Messages -->
+    <string name="success_loaded">Videos loaded successfully</string>
+    <string name="success_analyzed">Analysis complete</string>
+
+    <!-- Video Information -->
+    <string name="video_title">Video title</string>
+    <string name="video_duration">Duration: %s</string>
+    <string name="video_resolution">Resolution: %s</string>
+
+    <!-- Button Labels -->
+    <string name="button_retry">Retry</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_close">Close</string>
+    <string name="button_refresh">Refresh</string>
+    <string name="button_settings">Settings</string>
+
+    <!-- Placeholders -->
+    <string name="placeholder_username">@user_%d</string>
+    <string name="placeholder_caption">%s\n\n#reels #viral #trending</string>
+    <string name="placeholder_title">Video %d</string>
+
+    <!-- Format Strings -->
+    <string name="format_likes">%s likes</string>
+    <string name="format_comments">%s comments</string>
+    <string name="format_shares">%s shares</string>
+    <string name="format_count_k">%.1fK</string>
+    <string name="format_count_m">%.1fM</string>
+
+    <!-- Violence Detection Status -->
+    <string name="violence_safe">Content is safe</string>
+    <string name="violence_detected">Violence detected (%.1f%% confidence)</string>
+    <string name="violence_analyzing">Analyzing for violent content...</string>
+    <string name="violence_error">Could not analyze content</string>
+
+    <!-- Date/Time Formats -->
+    <string name="date_format">MMM dd, yyyy</string>
+    <string name="time_format">hh:mm a</string>
+
+    <!-- Confirmation Dialogs -->
+    <string name="confirm_exit">Are you sure you want to exit?</string>
+    <string name="confirm_delete">Delete this video?</string>
+    <string name="confirm_report">Report this video?</string>
+
+    <!-- Report Reasons -->
+    <string name="report_reason_violence">Violent content</string>
+    <string name="report_reason_hate">Hate speech</string>
+    <string name="report_reason_spam">Spam</string>
+    <string name="report_reason_inappropriate">Inappropriate content</string>
+    <string name="report_reason_other">Other</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_copied">Link copied to clipboard</string>
+    <string name="toast_reported">Thank you for reporting</string>
+    <string name="toast_saved">Video saved</string>
+    <string name="toast_downloaded">Download started</string>
+    <string name="violent_content_blocked">⛔ VIOLENT CONTENT BLOCKED</string>
+
+    <!-- Array of usernames for fallback -->
+    <string-array name="usernames">
+        <item>@travel_adventures</item>
+        <item>@foodie_diaries</item>
+        <item>@fitness_motivation</item>
+        <item>@art_and_craft</item>
+        <item>@music_lovers</item>
+        <item>@comedy_central</item>
+        <item>@pet_vibes</item>
+        <item>@tech_reviews</item>
+        <item>@gaming_community</item>
+        <item>@fashion_style</item>
+        <item>@nature_wonders</item>
+        <item>@sports_highlights</item>
+        <item>@dance_crew</item>
+        <item>@cooking_tips</item>
+        <item>@movie_clips</item>
+    </string-array>
+
+    <!-- Array of captions for fallback -->
+    <string-array name="captions">
+        <item>%s\n\n#reels #viral #trending #shorts</item>
+        <item>%s\n\nCheck this out! 🔥 #viral #reels</item>
+        <item>%s\n\nAmazing content! 🎥 #trending #viral</item>
+        <item>%s\n\nYou won\'t believe this! 😱 #reels #viral</item>
+        <item>%s\n\nMust watch! 👀 #trending #shorts</item>
+    </string-array>
+
+</resources>
