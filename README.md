@@ -65,7 +65,7 @@ This project introduces an **AI-Based Real-Time Violence Detection and Content B
 The system is a six-stage continuous real-time pipeline:
 
 <div align="center">
-<img src="screenshots/image3.png" width="750" alt="System Architecture Diagram"/>
+<img src="screenshots/image1.png" width="750" alt="System Architecture Diagram"/>
 
 *Figure: AI-Based Real-Time Violence Detection and Content Blocking System — Architecture Diagram*
 </div>
@@ -90,7 +90,7 @@ The app integrates with Android's **Accessibility Service API**, enabling cross-
 Detects **frame-level** violent content: weapons, blood stains, and threatening postures within individual video frames.
 
 <div align="center">
-<img src="screenshots/image4.png" width="800" alt="2D CNN Architecture"/>
+<img src="screenshots/image2.png" width="800" alt="2D CNN Architecture"/>
 
 *Figure: 2D CNN (MobileNetV2) Architecture*
 </div>
@@ -118,7 +118,7 @@ Detects **frame-level** violent content: weapons, blood stains, and threatening 
 Detects **action-level temporal** violence across sequences of 16 consecutive frames — capturing motion dynamics that a single frame cannot reveal.
 
 <div align="center">
-<img src="screenshots/image5.png" width="800" alt="3D CNN-LSTM Architecture"/>
+<img src="screenshots/image3.png" width="800" alt="3D CNN-LSTM Architecture"/>
 
 *Figure: 3D CNN-LSTM Hybrid Architecture*
 </div>
@@ -161,7 +161,7 @@ The fusion approach significantly reduces both false positives and false negativ
 ### 2D CNN — Frame-Level Results (Test Set: 5,100 images)
 
 <div align="center">
-<img src="screenshots/image8.png" width="550" alt="2D CNN Confusion Matrix"/>
+<img src="screenshots/image4.png" width="550" alt="2D CNN Confusion Matrix"/>
 
 *Confusion Matrix — 2D CNN (MobileNetV2)*
 </div>
@@ -179,7 +179,7 @@ The fusion approach significantly reduces both false positives and false negativ
 ### 3D CNN-LSTM — Clip-Level Results (Test Set: 300 video clips)
 
 <div align="center">
-<img src="screenshots/image9.png" width="500" alt="3D CNN Confusion Matrix"/>
+<img src="screenshots/image5.png" width="500" alt="3D CNN Confusion Matrix"/>
 
 *Confusion Matrix — 3D CNN-LSTM*
 </div>
