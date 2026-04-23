@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="screenshots/image10.jpeg" width="120" alt="App Logo"/>
+<img src="screenshots/image0.png" width="120" alt="App Logo"/>
 
 # 🛡️ AI-Based Violence Detection & Content Blocking System for Android
 
