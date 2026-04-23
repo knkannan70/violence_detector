@@ -2,7 +2,7 @@
 
 <img src="screenshots/image0.png" width="120" alt="App Logo"/>
 
-# 🛡️ AI-Based Violence Detection & Content Blocking System for Android
+# AI-Based Violence Detection & Content Blocking System for Android
 
 **Real-time, on-device violence detection powered by a dual deep learning engine — no internet required, zero data leaves your device.**
 
@@ -23,7 +23,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [System Architecture](#-system-architecture)
@@ -60,7 +60,7 @@ This project introduces an **AI-Based Real-Time Violence Detection and Content B
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The system is a six-stage continuous real-time pipeline:
 
@@ -83,7 +83,7 @@ The app integrates with Android's **Accessibility Service API**, enabling cross-
 
 ---
 
-## 🧠 Deep Learning Models
+## Deep Learning Models
 
 ### Model 1: 2D CNN — MobileNetV2 Based
 
@@ -207,7 +207,7 @@ The fusion approach significantly reduces both false positives and false negativ
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 | Feature | Description |
 |---|---|
@@ -222,7 +222,7 @@ The fusion approach significantly reduces both false positives and false negativ
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Model Training (Python)
 
@@ -247,7 +247,7 @@ The fusion approach significantly reduces both false positives and false negativ
 
 ---
 
-## 💻 System Requirements
+## System Requirements
 
 ### End-User (Android Device)
 
@@ -271,7 +271,7 @@ The fusion approach significantly reduces both false positives and false negativ
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 violence_detector/
@@ -302,7 +302,7 @@ violence_detector/
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 
@@ -355,7 +355,7 @@ python model_training/3d_cnn_lstm_training.py
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 ```
 User opens a short-video app (Instagram, YouTube Shorts, etc.)
@@ -387,7 +387,7 @@ Block Overlay  Allow video
 
 ---
 
-## 📊 Comparative Analysis
+## Comparative Analysis
 
 | Feature | Existing Systems | This System |
 |---|---|---|
@@ -403,7 +403,7 @@ Block Overlay  Allow video
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - **Multi-class classification** — extend beyond binary (violent/non-violent) to detect specific violence subtypes (weapons, fights, gore)
 - **Audio analysis integration** — fuse audio-based violence cues (screams, gunshots) with visual detection
@@ -415,7 +415,7 @@ Block Overlay  Allow video
 
 ---
 
-## 📚 References
+## References
 
 1. K. Simonyan and A. Zisserman, *Very Deep Convolutional Networks for Large-Scale Image Recognition*, ICLR, 2015
 2. M. Sandler et al., *MobileNetV2: Inverted Residuals and Linear Bottlenecks*, CVPR, 2018
@@ -426,7 +426,7 @@ Block Overlay  Allow video
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - **Dr. S. Antelin Vijila, M.E., Ph.D.** — Project Guide, Dept. of CSE, Manonmaniam Sundaranar University
 - **Dr. R. S. Rajesh, M.E., Ph.D.** — Head of Department, Dept. of CSE
@@ -436,7 +436,7 @@ Block Overlay  Allow video
 
 <div align="center">
 
-**Made with ❤️ by Kannan M**  
+**Made with by Kannan M**  
 MCA — Manonmaniam Sundaranar University | April 2026
 
 </div>
