@@ -278,23 +278,7 @@ violence_detector/
 │
 ├── model_training/
 │   ├── 2d_cnn_training.py          # MobileNetV2 2D CNN training script
-│   ├── 3d_cnn_lstm_training.py     # 3D CNN-LSTM hybrid training script
-│   ├── dataset/
-│   │   ├── 2d_dataset/
-│   │   │   ├── train/
-│   │   │   │   ├── violent/        # Violent images
-│   │   │   │   └── nonviolent/     # Non-violent images
-│   │   │   ├── val/
-│   │   │   └── test/
-│   │   └── 3d_dataset/
-│   │       ├── train/
-│   │       │   ├── violent/        # Violent video clips
-│   │       │   └── nonviolent/     # Non-violent video clips
-│   │       ├── val/
-│   │       └── test/
-│   └── models/
-│       ├── violence_mobilenet_model.tflite   # 2D CNN TFLite model
-│       └── violence_model_fp16.tflite        # 3D CNN-LSTM TFLite model (FP16)
+│   ├── 3d_cnn_training.py     # 3D CNN-LSTM hybrid training script
 │
 ├── android_app/
 │   ├── app/
