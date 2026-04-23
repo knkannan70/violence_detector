@@ -26,7 +26,6 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
-- [Demo Screenshots](#-demo-screenshots)
 - [System Architecture](#-system-architecture)
 - [Deep Learning Models](#-deep-learning-models)
   - [Model 1: 2D CNN (MobileNetV2)](#model-1-2d-cnn--mobilenetv2-based)
@@ -58,24 +57,6 @@ This project introduces an **AI-Based Real-Time Violence Detection and Content B
 
 > **2D CNN accuracy: 99.27%** on 5,100 test images  
 > **3D CNN-LSTM accuracy: 92.33%** on 300 test video clips
-
----
-
-## 📱 Demo Screenshots
-
-<div align="center">
-
-| Splash Screen | App Home Feed | Content Blocked |
-|:---:|:---:|:---:|
-| <img src="screenshots/image10.jpeg" width="200"/> | <img src="screenshots/image13.jpeg" width="200"/> | <img src="screenshots/image12.jpeg" width="200"/> |
-| *App launch* | *Safe video playing normally* | *Violent content blocked at 99.5% confidence* |
-
-| Settings Screen | Frame-Level Detection | Knife Detection (2D Model) |
-|:---:|:---:|:---:|
-| <img src="screenshots/image11.jpeg" width="200"/> | <img src="screenshots/image14.png" width="200"/> | <img src="screenshots/image7.png" width="200"/> |
-| *Enable/disable with one tap* | *Real-time frame interception* | *2D CNN flags weapon in single frame* |
-
-</div>
 
 ---
 
